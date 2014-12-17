@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E23974F109D82F500601771 /* PDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E23974C109D82F500601771 /* PDFAppDelegate.m */; };
+		0E23984B109D885400601771 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E23984A109D885400601771 /* test.png */; };
+		0E239892109D8CEB00601771 /* PDFView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E239891109D8CEB00601771 /* PDFView.xib */; };
+		0EE7E1DB1089A24B0030B9EF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE7E1DA1089A24B0030B9EF /* libz.dylib */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		D22A7201191D31990032C196 /* shoe.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A7200191D31990032C196 /* shoe.png */; };
+		D2637BCF19324D5500AFF0E5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2637BCE19324D5500AFF0E5 /* MessageUI.framework */; };
+		D2637BD31933870F00AFF0E5 /* shareButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2637BD21933870F00AFF0E5 /* shareButton.png */; };
+		D2637CF91934477600AFF0E5 /* APPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2637CEB1934477600AFF0E5 /* APPdfViewController.m */; };
+		D26380C3193451CB00AFF0E5 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = D2638052193451CB00AFF0E5 /* CHANGES */; };
+		D26380C4193451CB00AFF0E5 /* hpdf_annotation.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638054193451CB00AFF0E5 /* hpdf_annotation.c */; };
+		D26380C5193451CB00AFF0E5 /* hpdf_array.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638056193451CB00AFF0E5 /* hpdf_array.c */; };
+		D26380C6193451CB00AFF0E5 /* hpdf_binary.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638057193451CB00AFF0E5 /* hpdf_binary.c */; };
+		D26380C7193451CB00AFF0E5 /* hpdf_boolean.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638058193451CB00AFF0E5 /* hpdf_boolean.c */; };
+		D26380C8193451CB00AFF0E5 /* hpdf_catalog.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638059193451CB00AFF0E5 /* hpdf_catalog.c */; };
+		D26380C9193451CB00AFF0E5 /* hpdf_config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = D263805D193451CB00AFF0E5 /* hpdf_config.h.in */; };
+		D26380CA193451CB00AFF0E5 /* hpdf_destination.c in Sources */ = {isa = PBXBuildFile; fileRef = D263805F193451CB00AFF0E5 /* hpdf_destination.c */; };
+		D26380CB193451CB00AFF0E5 /* hpdf_dict.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638061193451CB00AFF0E5 /* hpdf_dict.c */; };
+		D26380CC193451CB00AFF0E5 /* hpdf_doc.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638062193451CB00AFF0E5 /* hpdf_doc.c */; };
+		D26380CD193451CB00AFF0E5 /* hpdf_doc_png.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638064193451CB00AFF0E5 /* hpdf_doc_png.c */; };
+		D26380CE193451CB00AFF0E5 /* hpdf_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638065193451CB00AFF0E5 /* hpdf_encoder.c */; };
+		D26380CF193451CB00AFF0E5 /* hpdf_encoder_cns.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638067193451CB00AFF0E5 /* hpdf_encoder_cns.c */; };
+		D26380D0193451CB00AFF0E5 /* hpdf_encoder_cnt.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638068193451CB00AFF0E5 /* hpdf_encoder_cnt.c */; };
+		D26380D1193451CB00AFF0E5 /* hpdf_encoder_jp.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638069193451CB00AFF0E5 /* hpdf_encoder_jp.c */; };
+		D26380D2193451CB00AFF0E5 /* hpdf_encoder_kr.c in Sources */ = {isa = PBXBuildFile; fileRef = D263806A193451CB00AFF0E5 /* hpdf_encoder_kr.c */; };
+		D26380D3193451CB00AFF0E5 /* hpdf_encrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = D263806B193451CB00AFF0E5 /* hpdf_encrypt.c */; };
+		D26380D4193451CB00AFF0E5 /* hpdf_encryptdict.c in Sources */ = {isa = PBXBuildFile; fileRef = D263806D193451CB00AFF0E5 /* hpdf_encryptdict.c */; };
+		D26380D5193451CB00AFF0E5 /* hpdf_error.c in Sources */ = {isa = PBXBuildFile; fileRef = D263806F193451CB00AFF0E5 /* hpdf_error.c */; };
+		D26380D6193451CB00AFF0E5 /* hpdf_ext_gstate.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638071193451CB00AFF0E5 /* hpdf_ext_gstate.c */; };
+		D26380D7193451CB00AFF0E5 /* hpdf_font.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638073193451CB00AFF0E5 /* hpdf_font.c */; };
+		D26380D8193451CB00AFF0E5 /* hpdf_font_cid.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638075193451CB00AFF0E5 /* hpdf_font_cid.c */; };
+		D26380D9193451CB00AFF0E5 /* hpdf_font_tt.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638076193451CB00AFF0E5 /* hpdf_font_tt.c */; };
+		D26380DA193451CB00AFF0E5 /* hpdf_font_type1.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638077193451CB00AFF0E5 /* hpdf_font_type1.c */; };
+		D26380DB193451CB00AFF0E5 /* hpdf_fontdef.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638078193451CB00AFF0E5 /* hpdf_fontdef.c */; };
+		D26380DC193451CB00AFF0E5 /* hpdf_fontdef_base14.c in Sources */ = {isa = PBXBuildFile; fileRef = D263807A193451CB00AFF0E5 /* hpdf_fontdef_base14.c */; };
+		D26380DD193451CB00AFF0E5 /* hpdf_fontdef_cid.c in Sources */ = {isa = PBXBuildFile; fileRef = D263807B193451CB00AFF0E5 /* hpdf_fontdef_cid.c */; };
+		D26380DE193451CB00AFF0E5 /* hpdf_fontdef_cns.c in Sources */ = {isa = PBXBuildFile; fileRef = D263807C193451CB00AFF0E5 /* hpdf_fontdef_cns.c */; };
+		D26380DF193451CB00AFF0E5 /* hpdf_fontdef_cnt.c in Sources */ = {isa = PBXBuildFile; fileRef = D263807D193451CB00AFF0E5 /* hpdf_fontdef_cnt.c */; };
+		D26380E0193451CB00AFF0E5 /* hpdf_fontdef_jp.c in Sources */ = {isa = PBXBuildFile; fileRef = D263807E193451CB00AFF0E5 /* hpdf_fontdef_jp.c */; };
+		D26380E1193451CB00AFF0E5 /* hpdf_fontdef_kr.c in Sources */ = {isa = PBXBuildFile; fileRef = D263807F193451CB00AFF0E5 /* hpdf_fontdef_kr.c */; };
+		D26380E2193451CB00AFF0E5 /* hpdf_fontdef_tt.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638080193451CB00AFF0E5 /* hpdf_fontdef_tt.c */; };
+		D26380E3193451CB00AFF0E5 /* hpdf_fontdef_type1.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638081193451CB00AFF0E5 /* hpdf_fontdef_type1.c */; };
+		D26380E4193451CB00AFF0E5 /* hpdf_gstate.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638082193451CB00AFF0E5 /* hpdf_gstate.c */; };
+		D26380E5193451CB00AFF0E5 /* hpdf_image.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638084193451CB00AFF0E5 /* hpdf_image.c */; };
+		D26380E6193451CB00AFF0E5 /* hpdf_image_png.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638086193451CB00AFF0E5 /* hpdf_image_png.c */; };
+		D26380E7193451CB00AFF0E5 /* hpdf_info.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638087193451CB00AFF0E5 /* hpdf_info.c */; };
+		D26380E8193451CB00AFF0E5 /* hpdf_list.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638089193451CB00AFF0E5 /* hpdf_list.c */; };
+		D26380E9193451CB00AFF0E5 /* hpdf_mmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = D263808B193451CB00AFF0E5 /* hpdf_mmgr.c */; };
+		D26380EA193451CB00AFF0E5 /* hpdf_name.c in Sources */ = {isa = PBXBuildFile; fileRef = D263808D193451CB00AFF0E5 /* hpdf_name.c */; };
+		D26380EB193451CB00AFF0E5 /* hpdf_null.c in Sources */ = {isa = PBXBuildFile; fileRef = D263808E193451CB00AFF0E5 /* hpdf_null.c */; };
+		D26380EC193451CB00AFF0E5 /* hpdf_number.c in Sources */ = {isa = PBXBuildFile; fileRef = D263808F193451CB00AFF0E5 /* hpdf_number.c */; };
+		D26380ED193451CB00AFF0E5 /* hpdf_objects.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638090193451CB00AFF0E5 /* hpdf_objects.c */; };
+		D26380EE193451CB00AFF0E5 /* hpdf_outline.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638092193451CB00AFF0E5 /* hpdf_outline.c */; };
+		D26380EF193451CB00AFF0E5 /* hpdf_page_label.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638094193451CB00AFF0E5 /* hpdf_page_label.c */; };
+		D26380F0193451CB00AFF0E5 /* hpdf_page_operator.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638096193451CB00AFF0E5 /* hpdf_page_operator.c */; };
+		D26380F1193451CB00AFF0E5 /* hpdf_pages.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638097193451CB00AFF0E5 /* hpdf_pages.c */; };
+		D26380F2193451CB00AFF0E5 /* hpdf_real.c in Sources */ = {isa = PBXBuildFile; fileRef = D2638099193451CB00AFF0E5 /* hpdf_real.c */; };
+		D26380F3193451CB00AFF0E5 /* hpdf_streams.c in Sources */ = {isa = PBXBuildFile; fileRef = D263809A193451CB00AFF0E5 /* hpdf_streams.c */; };
+		D26380F4193451CB00AFF0E5 /* hpdf_string.c in Sources */ = {isa = PBXBuildFile; fileRef = D263809C193451CB00AFF0E5 /* hpdf_string.c */; };
+		D26380F5193451CB00AFF0E5 /* hpdf_u3d.c in Sources */ = {isa = PBXBuildFile; fileRef = D263809E193451CB00AFF0E5 /* hpdf_u3d.c */; };
+		D26380F6193451CB00AFF0E5 /* hpdf_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380A0193451CB00AFF0E5 /* hpdf_utils.c */; };
+		D26380F7193451CB00AFF0E5 /* hpdf_xref.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380A3193451CB00AFF0E5 /* hpdf_xref.c */; };
+		D26380F8193451CB00AFF0E5 /* INSTALL in Resources */ = {isa = PBXBuildFile; fileRef = D26380A4193451CB00AFF0E5 /* INSTALL */; };
+		D26380F9193451CB00AFF0E5 /* Makefile.am in Resources */ = {isa = PBXBuildFile; fileRef = D26380A5193451CB00AFF0E5 /* Makefile.am */; };
+		D26380FA193451CB00AFF0E5 /* Makefile.in in Resources */ = {isa = PBXBuildFile; fileRef = D26380A6193451CB00AFF0E5 /* Makefile.in */; };
+		D26380FB193451CB00AFF0E5 /* README in Resources */ = {isa = PBXBuildFile; fileRef = D26380A7193451CB00AFF0E5 /* README */; };
+		D26380FC193451CB00AFF0E5 /* ANNOUNCE in Resources */ = {isa = PBXBuildFile; fileRef = D26380A9193451CB00AFF0E5 /* ANNOUNCE */; };
+		D26380FD193451CB00AFF0E5 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = D26380AA193451CB00AFF0E5 /* CHANGES */; };
+		D26380FE193451CB00AFF0E5 /* libpng-1.2.38.txt in Resources */ = {isa = PBXBuildFile; fileRef = D26380AB193451CB00AFF0E5 /* libpng-1.2.38.txt */; };
+		D26380FF193451CB00AFF0E5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D26380AC193451CB00AFF0E5 /* LICENSE */; };
+		D2638100193451CB00AFF0E5 /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380AD193451CB00AFF0E5 /* png.c */; };
+		D2638101193451CB00AFF0E5 /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B0193451CB00AFF0E5 /* pngerror.c */; };
+		D2638102193451CB00AFF0E5 /* pnggccrd.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B1193451CB00AFF0E5 /* pnggccrd.c */; };
+		D2638103193451CB00AFF0E5 /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B2193451CB00AFF0E5 /* pngget.c */; };
+		D2638104193451CB00AFF0E5 /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B3193451CB00AFF0E5 /* pngmem.c */; };
+		D2638105193451CB00AFF0E5 /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B4193451CB00AFF0E5 /* pngpread.c */; };
+		D2638106193451CB00AFF0E5 /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B5193451CB00AFF0E5 /* pngread.c */; };
+		D2638107193451CB00AFF0E5 /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B6193451CB00AFF0E5 /* pngrio.c */; };
+		D2638108193451CB00AFF0E5 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B7193451CB00AFF0E5 /* pngrtran.c */; };
+		D2638109193451CB00AFF0E5 /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B8193451CB00AFF0E5 /* pngrutil.c */; };
+		D263810A193451CB00AFF0E5 /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380B9193451CB00AFF0E5 /* pngset.c */; };
+		D263810C193451CB00AFF0E5 /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380BB193451CB00AFF0E5 /* pngtrans.c */; };
+		D263810D193451CB00AFF0E5 /* pngvcrd.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380BC193451CB00AFF0E5 /* pngvcrd.c */; };
+		D263810E193451CB00AFF0E5 /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380BD193451CB00AFF0E5 /* pngwio.c */; };
+		D263810F193451CB00AFF0E5 /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380BE193451CB00AFF0E5 /* pngwrite.c */; };
+		D2638110193451CB00AFF0E5 /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380BF193451CB00AFF0E5 /* pngwtran.c */; };
+		D2638111193451CB00AFF0E5 /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D26380C0193451CB00AFF0E5 /* pngwutil.c */; };
+		D2638112193451CB00AFF0E5 /* README in Resources */ = {isa = PBXBuildFile; fileRef = D26380C1193451CB00AFF0E5 /* README */; };
+		D2638113193451CB00AFF0E5 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = D26380C2193451CB00AFF0E5 /* TODO */; };
+		D28B4D351A279A2500881E15 /* APPdfLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D28B4D341A279A2500881E15 /* APPdfLabel.m */; };
+		D28B4D381A27A56600881E15 /* APPdfView.m in Sources */ = {isa = PBXBuildFile; fileRef = D28B4D371A27A56600881E15 /* APPdfView.m */; };
+		D29F96511A38C37A0067B663 /* APPDFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F96501A38C37A0067B663 /* APPDFImageView.m */; };
+		D2A199821A2DC84E00395C1A /* APPdfContext.c in Sources */ = {isa = PBXBuildFile; fileRef = D2A199801A2DC84E00395C1A /* APPdfContext.c */; };
+		D2A36430193B65C20014C149 /* NSIndexPath+Pdf.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A3642F193B65C20014C149 /* NSIndexPath+Pdf.m */; };
+		D2D6335E192A751100983538 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D6335D192A751100983538 /* logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E23974B109D82F500601771 /* PDFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFAppDelegate.h; sourceTree = "<group>"; };
+		0E23974C109D82F500601771 /* PDFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFAppDelegate.m; sourceTree = "<group>"; };
+		0E239751109D830400601771 /* iPhonePDF_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhonePDF_Prefix.pch; sourceTree = "<group>"; };
+		0E239802109D832A00601771 /* iPhonePDF-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iPhonePDF-Info.plist"; sourceTree = "<group>"; };
+		0E239806109D839A00601771 /* iPhonePDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhonePDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E23984A109D885400601771 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		0E239891109D8CEB00601771 /* PDFView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFView.xib; sourceTree = "<group>"; };
+		0EE7E1DA1089A24B0030B9EF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D22A7200191D31990032C196 /* shoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe.png; sourceTree = "<group>"; };
+		D2637BCE19324D5500AFF0E5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D2637BD21933870F00AFF0E5 /* shareButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareButton.png; sourceTree = "<group>"; };
+		D2637CEA1934477600AFF0E5 /* APPdfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPdfViewController.h; sourceTree = "<group>"; };
+		D2637CEB1934477600AFF0E5 /* APPdfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPdfViewController.m; sourceTree = "<group>"; };
+		D2638052193451CB00AFF0E5 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		D2638053193451CB00AFF0E5 /* hpdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf.h; sourceTree = "<group>"; };
+		D2638054193451CB00AFF0E5 /* hpdf_annotation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_annotation.c; sourceTree = "<group>"; };
+		D2638055193451CB00AFF0E5 /* hpdf_annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_annotation.h; sourceTree = "<group>"; };
+		D2638056193451CB00AFF0E5 /* hpdf_array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_array.c; sourceTree = "<group>"; };
+		D2638057193451CB00AFF0E5 /* hpdf_binary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_binary.c; sourceTree = "<group>"; };
+		D2638058193451CB00AFF0E5 /* hpdf_boolean.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_boolean.c; sourceTree = "<group>"; };
+		D2638059193451CB00AFF0E5 /* hpdf_catalog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_catalog.c; sourceTree = "<group>"; };
+		D263805A193451CB00AFF0E5 /* hpdf_catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_catalog.h; sourceTree = "<group>"; };
+		D263805B193451CB00AFF0E5 /* hpdf_conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_conf.h; sourceTree = "<group>"; };
+		D263805C193451CB00AFF0E5 /* hpdf_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_config.h; sourceTree = "<group>"; };
+		D263805D193451CB00AFF0E5 /* hpdf_config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hpdf_config.h.in; sourceTree = "<group>"; };
+		D263805E193451CB00AFF0E5 /* hpdf_consts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_consts.h; sourceTree = "<group>"; };
+		D263805F193451CB00AFF0E5 /* hpdf_destination.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_destination.c; sourceTree = "<group>"; };
+		D2638060193451CB00AFF0E5 /* hpdf_destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_destination.h; sourceTree = "<group>"; };
+		D2638061193451CB00AFF0E5 /* hpdf_dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_dict.c; sourceTree = "<group>"; };
+		D2638062193451CB00AFF0E5 /* hpdf_doc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_doc.c; sourceTree = "<group>"; };
+		D2638063193451CB00AFF0E5 /* hpdf_doc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_doc.h; sourceTree = "<group>"; };
+		D2638064193451CB00AFF0E5 /* hpdf_doc_png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_doc_png.c; sourceTree = "<group>"; };
+		D2638065193451CB00AFF0E5 /* hpdf_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_encoder.c; sourceTree = "<group>"; };
+		D2638066193451CB00AFF0E5 /* hpdf_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_encoder.h; sourceTree = "<group>"; };
+		D2638067193451CB00AFF0E5 /* hpdf_encoder_cns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_encoder_cns.c; sourceTree = "<group>"; };
+		D2638068193451CB00AFF0E5 /* hpdf_encoder_cnt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_encoder_cnt.c; sourceTree = "<group>"; };
+		D2638069193451CB00AFF0E5 /* hpdf_encoder_jp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_encoder_jp.c; sourceTree = "<group>"; };
+		D263806A193451CB00AFF0E5 /* hpdf_encoder_kr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_encoder_kr.c; sourceTree = "<group>"; };
+		D263806B193451CB00AFF0E5 /* hpdf_encrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_encrypt.c; sourceTree = "<group>"; };
+		D263806C193451CB00AFF0E5 /* hpdf_encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_encrypt.h; sourceTree = "<group>"; };
+		D263806D193451CB00AFF0E5 /* hpdf_encryptdict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_encryptdict.c; sourceTree = "<group>"; };
+		D263806E193451CB00AFF0E5 /* hpdf_encryptdict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_encryptdict.h; sourceTree = "<group>"; };
+		D263806F193451CB00AFF0E5 /* hpdf_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_error.c; sourceTree = "<group>"; };
+		D2638070193451CB00AFF0E5 /* hpdf_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_error.h; sourceTree = "<group>"; };
+		D2638071193451CB00AFF0E5 /* hpdf_ext_gstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_ext_gstate.c; sourceTree = "<group>"; };
+		D2638072193451CB00AFF0E5 /* hpdf_ext_gstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_ext_gstate.h; sourceTree = "<group>"; };
+		D2638073193451CB00AFF0E5 /* hpdf_font.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_font.c; sourceTree = "<group>"; };
+		D2638074193451CB00AFF0E5 /* hpdf_font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_font.h; sourceTree = "<group>"; };
+		D2638075193451CB00AFF0E5 /* hpdf_font_cid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_font_cid.c; sourceTree = "<group>"; };
+		D2638076193451CB00AFF0E5 /* hpdf_font_tt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_font_tt.c; sourceTree = "<group>"; };
+		D2638077193451CB00AFF0E5 /* hpdf_font_type1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_font_type1.c; sourceTree = "<group>"; };
+		D2638078193451CB00AFF0E5 /* hpdf_fontdef.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef.c; sourceTree = "<group>"; };
+		D2638079193451CB00AFF0E5 /* hpdf_fontdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_fontdef.h; sourceTree = "<group>"; };
+		D263807A193451CB00AFF0E5 /* hpdf_fontdef_base14.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef_base14.c; sourceTree = "<group>"; };
+		D263807B193451CB00AFF0E5 /* hpdf_fontdef_cid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef_cid.c; sourceTree = "<group>"; };
+		D263807C193451CB00AFF0E5 /* hpdf_fontdef_cns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef_cns.c; sourceTree = "<group>"; };
+		D263807D193451CB00AFF0E5 /* hpdf_fontdef_cnt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef_cnt.c; sourceTree = "<group>"; };
+		D263807E193451CB00AFF0E5 /* hpdf_fontdef_jp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef_jp.c; sourceTree = "<group>"; };
+		D263807F193451CB00AFF0E5 /* hpdf_fontdef_kr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef_kr.c; sourceTree = "<group>"; };
+		D2638080193451CB00AFF0E5 /* hpdf_fontdef_tt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef_tt.c; sourceTree = "<group>"; };
+		D2638081193451CB00AFF0E5 /* hpdf_fontdef_type1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_fontdef_type1.c; sourceTree = "<group>"; };
+		D2638082193451CB00AFF0E5 /* hpdf_gstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_gstate.c; sourceTree = "<group>"; };
+		D2638083193451CB00AFF0E5 /* hpdf_gstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_gstate.h; sourceTree = "<group>"; };
+		D2638084193451CB00AFF0E5 /* hpdf_image.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_image.c; sourceTree = "<group>"; };
+		D2638085193451CB00AFF0E5 /* hpdf_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_image.h; sourceTree = "<group>"; };
+		D2638086193451CB00AFF0E5 /* hpdf_image_png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_image_png.c; sourceTree = "<group>"; };
+		D2638087193451CB00AFF0E5 /* hpdf_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_info.c; sourceTree = "<group>"; };
+		D2638088193451CB00AFF0E5 /* hpdf_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_info.h; sourceTree = "<group>"; };
+		D2638089193451CB00AFF0E5 /* hpdf_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_list.c; sourceTree = "<group>"; };
+		D263808A193451CB00AFF0E5 /* hpdf_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_list.h; sourceTree = "<group>"; };
+		D263808B193451CB00AFF0E5 /* hpdf_mmgr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_mmgr.c; sourceTree = "<group>"; };
+		D263808C193451CB00AFF0E5 /* hpdf_mmgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_mmgr.h; sourceTree = "<group>"; };
+		D263808D193451CB00AFF0E5 /* hpdf_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_name.c; sourceTree = "<group>"; };
+		D263808E193451CB00AFF0E5 /* hpdf_null.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_null.c; sourceTree = "<group>"; };
+		D263808F193451CB00AFF0E5 /* hpdf_number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_number.c; sourceTree = "<group>"; };
+		D2638090193451CB00AFF0E5 /* hpdf_objects.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_objects.c; sourceTree = "<group>"; };
+		D2638091193451CB00AFF0E5 /* hpdf_objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_objects.h; sourceTree = "<group>"; };
+		D2638092193451CB00AFF0E5 /* hpdf_outline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_outline.c; sourceTree = "<group>"; };
+		D2638093193451CB00AFF0E5 /* hpdf_outline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_outline.h; sourceTree = "<group>"; };
+		D2638094193451CB00AFF0E5 /* hpdf_page_label.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_page_label.c; sourceTree = "<group>"; };
+		D2638095193451CB00AFF0E5 /* hpdf_page_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_page_label.h; sourceTree = "<group>"; };
+		D2638096193451CB00AFF0E5 /* hpdf_page_operator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_page_operator.c; sourceTree = "<group>"; };
+		D2638097193451CB00AFF0E5 /* hpdf_pages.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_pages.c; sourceTree = "<group>"; };
+		D2638098193451CB00AFF0E5 /* hpdf_pages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_pages.h; sourceTree = "<group>"; };
+		D2638099193451CB00AFF0E5 /* hpdf_real.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_real.c; sourceTree = "<group>"; };
+		D263809A193451CB00AFF0E5 /* hpdf_streams.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_streams.c; sourceTree = "<group>"; };
+		D263809B193451CB00AFF0E5 /* hpdf_streams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_streams.h; sourceTree = "<group>"; };
+		D263809C193451CB00AFF0E5 /* hpdf_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_string.c; sourceTree = "<group>"; };
+		D263809D193451CB00AFF0E5 /* hpdf_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_types.h; sourceTree = "<group>"; };
+		D263809E193451CB00AFF0E5 /* hpdf_u3d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_u3d.c; sourceTree = "<group>"; };
+		D263809F193451CB00AFF0E5 /* hpdf_u3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_u3d.h; sourceTree = "<group>"; };
+		D26380A0193451CB00AFF0E5 /* hpdf_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_utils.c; sourceTree = "<group>"; };
+		D26380A1193451CB00AFF0E5 /* hpdf_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_utils.h; sourceTree = "<group>"; };
+		D26380A2193451CB00AFF0E5 /* hpdf_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpdf_version.h; sourceTree = "<group>"; };
+		D26380A3193451CB00AFF0E5 /* hpdf_xref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hpdf_xref.c; sourceTree = "<group>"; };
+		D26380A4193451CB00AFF0E5 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		D26380A5193451CB00AFF0E5 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		D26380A6193451CB00AFF0E5 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		D26380A7193451CB00AFF0E5 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		D26380A9193451CB00AFF0E5 /* ANNOUNCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ANNOUNCE; sourceTree = "<group>"; };
+		D26380AA193451CB00AFF0E5 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		D26380AB193451CB00AFF0E5 /* libpng-1.2.38.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libpng-1.2.38.txt"; sourceTree = "<group>"; };
+		D26380AC193451CB00AFF0E5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D26380AD193451CB00AFF0E5 /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = png.c; sourceTree = "<group>"; };
+		D26380AE193451CB00AFF0E5 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		D26380AF193451CB00AFF0E5 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		D26380B0193451CB00AFF0E5 /* pngerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngerror.c; sourceTree = "<group>"; };
+		D26380B1193451CB00AFF0E5 /* pnggccrd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pnggccrd.c; sourceTree = "<group>"; };
+		D26380B2193451CB00AFF0E5 /* pngget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngget.c; sourceTree = "<group>"; };
+		D26380B3193451CB00AFF0E5 /* pngmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngmem.c; sourceTree = "<group>"; };
+		D26380B4193451CB00AFF0E5 /* pngpread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngpread.c; sourceTree = "<group>"; };
+		D26380B5193451CB00AFF0E5 /* pngread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngread.c; sourceTree = "<group>"; };
+		D26380B6193451CB00AFF0E5 /* pngrio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrio.c; sourceTree = "<group>"; };
+		D26380B7193451CB00AFF0E5 /* pngrtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrtran.c; sourceTree = "<group>"; };
+		D26380B8193451CB00AFF0E5 /* pngrutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrutil.c; sourceTree = "<group>"; };
+		D26380B9193451CB00AFF0E5 /* pngset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngset.c; sourceTree = "<group>"; };
+		D26380BB193451CB00AFF0E5 /* pngtrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngtrans.c; sourceTree = "<group>"; };
+		D26380BC193451CB00AFF0E5 /* pngvcrd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngvcrd.c; sourceTree = "<group>"; };
+		D26380BD193451CB00AFF0E5 /* pngwio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwio.c; sourceTree = "<group>"; };
+		D26380BE193451CB00AFF0E5 /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwrite.c; sourceTree = "<group>"; };
+		D26380BF193451CB00AFF0E5 /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
+		D26380C0193451CB00AFF0E5 /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwutil.c; sourceTree = "<group>"; };
+		D26380C1193451CB00AFF0E5 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		D26380C2193451CB00AFF0E5 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		D28B4D331A279A2500881E15 /* APPdfLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPdfLabel.h; sourceTree = "<group>"; };
+		D28B4D341A279A2500881E15 /* APPdfLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPdfLabel.m; sourceTree = "<group>"; };
+		D28B4D361A27A56600881E15 /* APPdfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPdfView.h; sourceTree = "<group>"; };
+		D28B4D371A27A56600881E15 /* APPdfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPdfView.m; sourceTree = "<group>"; };
+		D29F964F1A38C37A0067B663 /* APPDFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFImageView.h; sourceTree = "<group>"; };
+		D29F96501A38C37A0067B663 /* APPDFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPDFImageView.m; sourceTree = "<group>"; };
+		D2A199801A2DC84E00395C1A /* APPdfContext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = APPdfContext.c; sourceTree = "<group>"; };
+		D2A199811A2DC84E00395C1A /* APPdfContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPdfContext.h; sourceTree = "<group>"; };
+		D2A3642E193B65C20014C149 /* NSIndexPath+Pdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Pdf.h"; sourceTree = "<group>"; };
+		D2A3642F193B65C20014C149 /* NSIndexPath+Pdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Pdf.m"; sourceTree = "<group>"; };
+		D2D6335D192A751100983538 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2637BCF19324D5500AFF0E5 /* MessageUI.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				0EE7E1DB1089A24B0030B9EF /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D28B4D321A279A1100881E15 /* MAFPdf2.0 */,
+				0E23974B109D82F500601771 /* PDFAppDelegate.h */,
+				0E23974C109D82F500601771 /* PDFAppDelegate.m */,
+				D2638050193451CB00AFF0E5 /* Support */,
+				D2637CE91934477600AFF0E5 /* PDFControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E239806109D839A00601771 /* iPhonePDF.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D2A3642E193B65C20014C149 /* NSIndexPath+Pdf.h */,
+				D2A3642F193B65C20014C149 /* NSIndexPath+Pdf.m */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0E239751109D830400601771 /* iPhonePDF_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2637BD21933870F00AFF0E5 /* shareButton.png */,
+				D2D6335D192A751100983538 /* logo.png */,
+				D22A7200191D31990032C196 /* shoe.png */,
+				0E23984A109D885400601771 /* test.png */,
+				0E239802109D832A00601771 /* iPhonePDF-Info.plist */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				0E239891109D8CEB00601771 /* PDFView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2637BCE19324D5500AFF0E5 /* MessageUI.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				0EE7E1DA1089A24B0030B9EF /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2637CE91934477600AFF0E5 /* PDFControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2637CEA1934477600AFF0E5 /* APPdfViewController.h */,
+				D2637CEB1934477600AFF0E5 /* APPdfViewController.m */,
+			);
+			path = PDFControllers;
+			sourceTree = "<group>";
+		};
+		D2638050193451CB00AFF0E5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D2638051193451CB00AFF0E5 /* libharu */,
+				D26380A8193451CB00AFF0E5 /* libpng */,
+			);
+			path = Support;
+			sourceTree = SOURCE_ROOT;
+		};
+		D2638051193451CB00AFF0E5 /* libharu */ = {
+			isa = PBXGroup;
+			children = (
+				D2638052193451CB00AFF0E5 /* CHANGES */,
+				D2638053193451CB00AFF0E5 /* hpdf.h */,
+				D2638054193451CB00AFF0E5 /* hpdf_annotation.c */,
+				D2638055193451CB00AFF0E5 /* hpdf_annotation.h */,
+				D2638056193451CB00AFF0E5 /* hpdf_array.c */,
+				D2638057193451CB00AFF0E5 /* hpdf_binary.c */,
+				D2638058193451CB00AFF0E5 /* hpdf_boolean.c */,
+				D2638059193451CB00AFF0E5 /* hpdf_catalog.c */,
+				D263805A193451CB00AFF0E5 /* hpdf_catalog.h */,
+				D263805B193451CB00AFF0E5 /* hpdf_conf.h */,
+				D263805C193451CB00AFF0E5 /* hpdf_config.h */,
+				D263805D193451CB00AFF0E5 /* hpdf_config.h.in */,
+				D263805E193451CB00AFF0E5 /* hpdf_consts.h */,
+				D263805F193451CB00AFF0E5 /* hpdf_destination.c */,
+				D2638060193451CB00AFF0E5 /* hpdf_destination.h */,
+				D2638061193451CB00AFF0E5 /* hpdf_dict.c */,
+				D2638062193451CB00AFF0E5 /* hpdf_doc.c */,
+				D2638063193451CB00AFF0E5 /* hpdf_doc.h */,
+				D2638064193451CB00AFF0E5 /* hpdf_doc_png.c */,
+				D2638065193451CB00AFF0E5 /* hpdf_encoder.c */,
+				D2638066193451CB00AFF0E5 /* hpdf_encoder.h */,
+				D2638067193451CB00AFF0E5 /* hpdf_encoder_cns.c */,
+				D2638068193451CB00AFF0E5 /* hpdf_encoder_cnt.c */,
+				D2638069193451CB00AFF0E5 /* hpdf_encoder_jp.c */,
+				D263806A193451CB00AFF0E5 /* hpdf_encoder_kr.c */,
+				D263806B193451CB00AFF0E5 /* hpdf_encrypt.c */,
+				D263806C193451CB00AFF0E5 /* hpdf_encrypt.h */,
+				D263806D193451CB00AFF0E5 /* hpdf_encryptdict.c */,
+				D263806E193451CB00AFF0E5 /* hpdf_encryptdict.h */,
+				D263806F193451CB00AFF0E5 /* hpdf_error.c */,
+				D2638070193451CB00AFF0E5 /* hpdf_error.h */,
+				D2638071193451CB00AFF0E5 /* hpdf_ext_gstate.c */,
+				D2638072193451CB00AFF0E5 /* hpdf_ext_gstate.h */,
+				D2638073193451CB00AFF0E5 /* hpdf_font.c */,
+				D2638074193451CB00AFF0E5 /* hpdf_font.h */,
+				D2638075193451CB00AFF0E5 /* hpdf_font_cid.c */,
+				D2638076193451CB00AFF0E5 /* hpdf_font_tt.c */,
+				D2638077193451CB00AFF0E5 /* hpdf_font_type1.c */,
+				D2638078193451CB00AFF0E5 /* hpdf_fontdef.c */,
+				D2638079193451CB00AFF0E5 /* hpdf_fontdef.h */,
+				D263807A193451CB00AFF0E5 /* hpdf_fontdef_base14.c */,
+				D263807B193451CB00AFF0E5 /* hpdf_fontdef_cid.c */,
+				D263807C193451CB00AFF0E5 /* hpdf_fontdef_cns.c */,
+				D263807D193451CB00AFF0E5 /* hpdf_fontdef_cnt.c */,
+				D263807E193451CB00AFF0E5 /* hpdf_fontdef_jp.c */,
+				D263807F193451CB00AFF0E5 /* hpdf_fontdef_kr.c */,
+				D2638080193451CB00AFF0E5 /* hpdf_fontdef_tt.c */,
+				D2638081193451CB00AFF0E5 /* hpdf_fontdef_type1.c */,
+				D2638082193451CB00AFF0E5 /* hpdf_gstate.c */,
+				D2638083193451CB00AFF0E5 /* hpdf_gstate.h */,
+				D2638084193451CB00AFF0E5 /* hpdf_image.c */,
+				D2638085193451CB00AFF0E5 /* hpdf_image.h */,
+				D2638086193451CB00AFF0E5 /* hpdf_image_png.c */,
+				D2638087193451CB00AFF0E5 /* hpdf_info.c */,
+				D2638088193451CB00AFF0E5 /* hpdf_info.h */,
+				D2638089193451CB00AFF0E5 /* hpdf_list.c */,
+				D263808A193451CB00AFF0E5 /* hpdf_list.h */,
+				D263808B193451CB00AFF0E5 /* hpdf_mmgr.c */,
+				D263808C193451CB00AFF0E5 /* hpdf_mmgr.h */,
+				D263808D193451CB00AFF0E5 /* hpdf_name.c */,
+				D263808E193451CB00AFF0E5 /* hpdf_null.c */,
+				D263808F193451CB00AFF0E5 /* hpdf_number.c */,
+				D2638090193451CB00AFF0E5 /* hpdf_objects.c */,
+				D2638091193451CB00AFF0E5 /* hpdf_objects.h */,
+				D2638092193451CB00AFF0E5 /* hpdf_outline.c */,
+				D2638093193451CB00AFF0E5 /* hpdf_outline.h */,
+				D2638094193451CB00AFF0E5 /* hpdf_page_label.c */,
+				D2638095193451CB00AFF0E5 /* hpdf_page_label.h */,
+				D2638096193451CB00AFF0E5 /* hpdf_page_operator.c */,
+				D2638097193451CB00AFF0E5 /* hpdf_pages.c */,
+				D2638098193451CB00AFF0E5 /* hpdf_pages.h */,
+				D2638099193451CB00AFF0E5 /* hpdf_real.c */,
+				D263809A193451CB00AFF0E5 /* hpdf_streams.c */,
+				D263809B193451CB00AFF0E5 /* hpdf_streams.h */,
+				D263809C193451CB00AFF0E5 /* hpdf_string.c */,
+				D263809D193451CB00AFF0E5 /* hpdf_types.h */,
+				D263809E193451CB00AFF0E5 /* hpdf_u3d.c */,
+				D263809F193451CB00AFF0E5 /* hpdf_u3d.h */,
+				D26380A0193451CB00AFF0E5 /* hpdf_utils.c */,
+				D26380A1193451CB00AFF0E5 /* hpdf_utils.h */,
+				D26380A2193451CB00AFF0E5 /* hpdf_version.h */,
+				D26380A3193451CB00AFF0E5 /* hpdf_xref.c */,
+				D26380A4193451CB00AFF0E5 /* INSTALL */,
+				D26380A5193451CB00AFF0E5 /* Makefile.am */,
+				D26380A6193451CB00AFF0E5 /* Makefile.in */,
+				D26380A7193451CB00AFF0E5 /* README */,
+			);
+			path = libharu;
+			sourceTree = "<group>";
+		};
+		D26380A8193451CB00AFF0E5 /* libpng */ = {
+			isa = PBXGroup;
+			children = (
+				D26380A9193451CB00AFF0E5 /* ANNOUNCE */,
+				D26380AA193451CB00AFF0E5 /* CHANGES */,
+				D26380AB193451CB00AFF0E5 /* libpng-1.2.38.txt */,
+				D26380AC193451CB00AFF0E5 /* LICENSE */,
+				D26380AD193451CB00AFF0E5 /* png.c */,
+				D26380AE193451CB00AFF0E5 /* png.h */,
+				D26380AF193451CB00AFF0E5 /* pngconf.h */,
+				D26380B0193451CB00AFF0E5 /* pngerror.c */,
+				D26380B1193451CB00AFF0E5 /* pnggccrd.c */,
+				D26380B2193451CB00AFF0E5 /* pngget.c */,
+				D26380B3193451CB00AFF0E5 /* pngmem.c */,
+				D26380B4193451CB00AFF0E5 /* pngpread.c */,
+				D26380B5193451CB00AFF0E5 /* pngread.c */,
+				D26380B6193451CB00AFF0E5 /* pngrio.c */,
+				D26380B7193451CB00AFF0E5 /* pngrtran.c */,
+				D26380B8193451CB00AFF0E5 /* pngrutil.c */,
+				D26380B9193451CB00AFF0E5 /* pngset.c */,
+				D26380BB193451CB00AFF0E5 /* pngtrans.c */,
+				D26380BC193451CB00AFF0E5 /* pngvcrd.c */,
+				D26380BD193451CB00AFF0E5 /* pngwio.c */,
+				D26380BE193451CB00AFF0E5 /* pngwrite.c */,
+				D26380BF193451CB00AFF0E5 /* pngwtran.c */,
+				D26380C0193451CB00AFF0E5 /* pngwutil.c */,
+				D26380C1193451CB00AFF0E5 /* README */,
+				D26380C2193451CB00AFF0E5 /* TODO */,
+			);
+			path = libpng;
+			sourceTree = "<group>";
+		};
+		D28B4D321A279A1100881E15 /* MAFPdf2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				D2A199811A2DC84E00395C1A /* APPdfContext.h */,
+				D2A199801A2DC84E00395C1A /* APPdfContext.c */,
+				D28B4D361A27A56600881E15 /* APPdfView.h */,
+				D28B4D371A27A56600881E15 /* APPdfView.m */,
+				D28B4D331A279A2500881E15 /* APPdfLabel.h */,
+				D28B4D341A279A2500881E15 /* APPdfLabel.m */,
+				D29F964F1A38C37A0067B663 /* APPDFImageView.h */,
+				D29F96501A38C37A0067B663 /* APPDFImageView.m */,
+			);
+			path = MAFPdf2.0;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iPhonePDF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iPhonePDF" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPhonePDF;
+			productName = Meisi;
+			productReference = 0E239806109D839A00601771 /* iPhonePDF.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhonePDF" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iPhonePDF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26380FB193451CB00AFF0E5 /* README in Resources */,
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				D2D6335E192A751100983538 /* logo.png in Resources */,
+				D26380C9193451CB00AFF0E5 /* hpdf_config.h.in in Resources */,
+				0E23984B109D885400601771 /* test.png in Resources */,
+				D22A7201191D31990032C196 /* shoe.png in Resources */,
+				D26380FE193451CB00AFF0E5 /* libpng-1.2.38.txt in Resources */,
+				D26380FA193451CB00AFF0E5 /* Makefile.in in Resources */,
+				D2638112193451CB00AFF0E5 /* README in Resources */,
+				0E239892109D8CEB00601771 /* PDFView.xib in Resources */,
+				D26380F8193451CB00AFF0E5 /* INSTALL in Resources */,
+				D26380FF193451CB00AFF0E5 /* LICENSE in Resources */,
+				D2638113193451CB00AFF0E5 /* TODO in Resources */,
+				D26380F9193451CB00AFF0E5 /* Makefile.am in Resources */,
+				D26380FC193451CB00AFF0E5 /* ANNOUNCE in Resources */,
+				D26380C3193451CB00AFF0E5 /* CHANGES in Resources */,
+				D26380FD193451CB00AFF0E5 /* CHANGES in Resources */,
+				D2637BD31933870F00AFF0E5 /* shareButton.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26380D9193451CB00AFF0E5 /* hpdf_font_tt.c in Sources */,
+				D26380F6193451CB00AFF0E5 /* hpdf_utils.c in Sources */,
+				D2A199821A2DC84E00395C1A /* APPdfContext.c in Sources */,
+				D26380EE193451CB00AFF0E5 /* hpdf_outline.c in Sources */,
+				D29F96511A38C37A0067B663 /* APPDFImageView.m in Sources */,
+				D26380C6193451CB00AFF0E5 /* hpdf_binary.c in Sources */,
+				D26380F4193451CB00AFF0E5 /* hpdf_string.c in Sources */,
+				D26380EF193451CB00AFF0E5 /* hpdf_page_label.c in Sources */,
+				D26380F2193451CB00AFF0E5 /* hpdf_real.c in Sources */,
+				D26380F5193451CB00AFF0E5 /* hpdf_u3d.c in Sources */,
+				D26380E9193451CB00AFF0E5 /* hpdf_mmgr.c in Sources */,
+				D26380CB193451CB00AFF0E5 /* hpdf_dict.c in Sources */,
+				D2638105193451CB00AFF0E5 /* pngpread.c in Sources */,
+				D26380E1193451CB00AFF0E5 /* hpdf_fontdef_kr.c in Sources */,
+				D2638106193451CB00AFF0E5 /* pngread.c in Sources */,
+				D263810C193451CB00AFF0E5 /* pngtrans.c in Sources */,
+				D26380DD193451CB00AFF0E5 /* hpdf_fontdef_cid.c in Sources */,
+				D26380DA193451CB00AFF0E5 /* hpdf_font_type1.c in Sources */,
+				D26380C7193451CB00AFF0E5 /* hpdf_boolean.c in Sources */,
+				D2638102193451CB00AFF0E5 /* pnggccrd.c in Sources */,
+				D26380E5193451CB00AFF0E5 /* hpdf_image.c in Sources */,
+				D2638109193451CB00AFF0E5 /* pngrutil.c in Sources */,
+				D26380D2193451CB00AFF0E5 /* hpdf_encoder_kr.c in Sources */,
+				D26380DB193451CB00AFF0E5 /* hpdf_fontdef.c in Sources */,
+				D26380E2193451CB00AFF0E5 /* hpdf_fontdef_tt.c in Sources */,
+				D2638110193451CB00AFF0E5 /* pngwtran.c in Sources */,
+				D26380E4193451CB00AFF0E5 /* hpdf_gstate.c in Sources */,
+				D2638108193451CB00AFF0E5 /* pngrtran.c in Sources */,
+				D26380D7193451CB00AFF0E5 /* hpdf_font.c in Sources */,
+				D26380F0193451CB00AFF0E5 /* hpdf_page_operator.c in Sources */,
+				D26380CF193451CB00AFF0E5 /* hpdf_encoder_cns.c in Sources */,
+				D2638104193451CB00AFF0E5 /* pngmem.c in Sources */,
+				D26380F1193451CB00AFF0E5 /* hpdf_pages.c in Sources */,
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				D26380CD193451CB00AFF0E5 /* hpdf_doc_png.c in Sources */,
+				D28B4D381A27A56600881E15 /* APPdfView.m in Sources */,
+				D263810F193451CB00AFF0E5 /* pngwrite.c in Sources */,
+				D26380D0193451CB00AFF0E5 /* hpdf_encoder_cnt.c in Sources */,
+				D26380E0193451CB00AFF0E5 /* hpdf_fontdef_jp.c in Sources */,
+				D2638103193451CB00AFF0E5 /* pngget.c in Sources */,
+				0E23974F109D82F500601771 /* PDFAppDelegate.m in Sources */,
+				D26380D1193451CB00AFF0E5 /* hpdf_encoder_jp.c in Sources */,
+				D26380ED193451CB00AFF0E5 /* hpdf_objects.c in Sources */,
+				D26380EA193451CB00AFF0E5 /* hpdf_name.c in Sources */,
+				D26380E3193451CB00AFF0E5 /* hpdf_fontdef_type1.c in Sources */,
+				D26380CC193451CB00AFF0E5 /* hpdf_doc.c in Sources */,
+				D2638111193451CB00AFF0E5 /* pngwutil.c in Sources */,
+				D26380D5193451CB00AFF0E5 /* hpdf_error.c in Sources */,
+				D26380DF193451CB00AFF0E5 /* hpdf_fontdef_cnt.c in Sources */,
+				D2638101193451CB00AFF0E5 /* pngerror.c in Sources */,
+				D26380E7193451CB00AFF0E5 /* hpdf_info.c in Sources */,
+				D26380CE193451CB00AFF0E5 /* hpdf_encoder.c in Sources */,
+				D26380E8193451CB00AFF0E5 /* hpdf_list.c in Sources */,
+				D263810E193451CB00AFF0E5 /* pngwio.c in Sources */,
+				D26380E6193451CB00AFF0E5 /* hpdf_image_png.c in Sources */,
+				D26380D8193451CB00AFF0E5 /* hpdf_font_cid.c in Sources */,
+				D26380F7193451CB00AFF0E5 /* hpdf_xref.c in Sources */,
+				D26380C4193451CB00AFF0E5 /* hpdf_annotation.c in Sources */,
+				D263810D193451CB00AFF0E5 /* pngvcrd.c in Sources */,
+				D26380EC193451CB00AFF0E5 /* hpdf_number.c in Sources */,
+				D26380C8193451CB00AFF0E5 /* hpdf_catalog.c in Sources */,
+				D26380D6193451CB00AFF0E5 /* hpdf_ext_gstate.c in Sources */,
+				D26380EB193451CB00AFF0E5 /* hpdf_null.c in Sources */,
+				D26380CA193451CB00AFF0E5 /* hpdf_destination.c in Sources */,
+				D26380DE193451CB00AFF0E5 /* hpdf_fontdef_cns.c in Sources */,
+				D263810A193451CB00AFF0E5 /* pngset.c in Sources */,
+				D2638107193451CB00AFF0E5 /* pngrio.c in Sources */,
+				D26380D4193451CB00AFF0E5 /* hpdf_encryptdict.c in Sources */,
+				D26380D3193451CB00AFF0E5 /* hpdf_encrypt.c in Sources */,
+				D26380DC193451CB00AFF0E5 /* hpdf_fontdef_base14.c in Sources */,
+				D2638100193451CB00AFF0E5 /* png.c in Sources */,
+				D26380C5193451CB00AFF0E5 /* hpdf_array.c in Sources */,
+				D2637CF91934477600AFF0E5 /* APPdfViewController.m in Sources */,
+				D2A36430193B65C20014C149 /* NSIndexPath+Pdf.m in Sources */,
+				D26380F3193451CB00AFF0E5 /* hpdf_streams.c in Sources */,
+				D28B4D351A279A2500881E15 /* APPdfLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhonePDF_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INFOPLIST_FILE = "iPhonePDF-Info.plist";
+				IPHONE_OPTIMIZE_OPTIONS = "-skip-PNGs";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				PRODUCT_NAME = iPhonePDF;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhonePDF_Prefix.pch;
+				INFOPLIST_FILE = "iPhonePDF-Info.plist";
+				IPHONE_OPTIMIZE_OPTIONS = "-skip-PNGs";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				PRODUCT_NAME = iPhonePDF;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iPhonePDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhonePDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
